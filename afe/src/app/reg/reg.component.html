@@ -1,0 +1,12 @@
+<h1>Форма регистрации</h1>
+<form (submit)="userRegisterClick()">
+    <input type="text" [(ngModel)]="login" name="login" placeholder="Enter login" class="form-control">
+    <br>
+    <input type="password" [(ngModel)]="password" name="password" placeholder="Enter password" class="form-control">
+    <br>
+    <input type="text" [(ngModel)]="first_name" name="first_name" placeholder="Enter first_name" class="form-control">
+    <br>
+    <input type="text" [(ngModel)]="last_name" name="last_name" placeholder="Enter last_name" class="form-control">
+    <br>   
+<button type="submit" class="btn btn-success">Зарегистрировать</button>
+</form>

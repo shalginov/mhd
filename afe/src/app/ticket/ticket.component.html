@@ -1,0 +1,47 @@
+<div class="jumbotron">
+  <form (submit)="addTicket()">
+<div class="input-group mb-3" >
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Имя</span>
+    </div>
+    <input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="Имя заявителя" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Фам</span>
+    </div>
+    <input type="text" [(ngModel)]="fam" name="fam" class="form-control" placeholder="Фамилия заявителя" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Тел</span>
+    </div>
+    <input type="text"  [(ngModel)]="tel" name="tel" class="form-control" placeholder="Телефон" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Обращение </span>
+    </div>
+    <textarea class="form-control" [(ngModel)]="mes" name="mes" aria-label="Опишите проблему"></textarea>
+  </div>
+  <br>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="inputGroupSelect01">Исполнитель</label>
+    </div>
+    <select class="custom-select" [(ngModel)]="perf" name="perf" id="inputGroupSelect01">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  
+
+  <br>
+  <button type="submit" class="btn btn-primary">Ok</button>
+</form>
+</div>
